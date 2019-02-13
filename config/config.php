@@ -31,8 +31,8 @@ return array(
         'Facebook' => array(
             'patterns' => array(
                 '~\bfacebook\.com.*?\bv=(\d+)~',
-                '~^https?://www\.facebook\.com/video\.php\?v=(\d+)|.*?/videos/(\d+)$~m',
                 '~^https?://www\.facebook\.com/.*?/videos/(\d+)/?$~m',
+                '~^https?://www\.facebook\.com/video\.php\?v=(\d+)|.*?/videos/(\d+)$~m',
 
             ),
             'factory' => '\\RicardoFiorani\\Adapter\\Facebook\\Factory\\FacebookServiceAdapterFactory',
